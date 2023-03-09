@@ -1,4 +1,4 @@
-#include "../func.c"
+#include "func.c"
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>

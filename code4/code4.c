@@ -3,13 +3,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sys/types.h>
 #include <unistd.h>
 
 int main(int argc, char *argv[]) {
     char buffer[mes_size];
     if (argc != 3) {
-        printf("Please run the program with 3 arguments\n e.g.: \"./code read.txt write.txt\"\n");
+        printf("Please run the program with 2 arguments\n e.g.: \"./code read.txt write.txt\"\n");
         return 0;
     }
 
@@ -65,22 +64,22 @@ int main(int argc, char *argv[]) {
                 exit(-1);
             }
 
-            int file_to_write = 0;
+            int output_file = output_file = open(argv[2], O_WRONLY | O_CREAT, 0666);
 
-            if ((file_to_write = open(argv[2], O_WRONLY | O_CREAT, 0666)) < 0) {
+            if (output_file < 0) {
                 printf("Can\'t open file\n");
                 exit(-1);
             }
 
             // Запись в файл
-            size = write(file_to_write, buffer, strlen(buffer));
+            size = write(output_file, buffer, strlen(buffer));
 
             if (size != strlen(buffer)) {
                 printf("Can\'t write all string\n");
                 exit(-1);
             }
 
-            if (close(file_to_write) < 0) {
+            if (close(output_file) < 0) {
                 printf("Can\'t close file\n");
             }
         } else {
@@ -121,7 +120,8 @@ int main(int argc, char *argv[]) {
                 exit(-1);
             }
         }
-    } else {// process > 0
+    } else {
+        // process > 0
         // Первый процесс - считать из файла и направить в поток один (в процесс 2)
         if (close(fd12[0]) < 0) {
             printf("parent: Can\'t close reading side of pipe\n");
