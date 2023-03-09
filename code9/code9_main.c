@@ -35,7 +35,6 @@ int main(int argc, char *argv[]) {
     }
 
     ssize_t read_bytes;
-    char *temple_buffer;
     fd12 = open(pipe1, O_WRONLY);
     if (fd12 < 0) {
         printf("Can\'t open FIFO for writting\n");
@@ -43,6 +42,7 @@ int main(int argc, char *argv[]) {
     }
 
     do {
+        char temple_buffer[max_size];
         read_bytes = read(file_to_read, temple_buffer, max_size);
         if (read_bytes == -1) {
             printf("Can\'t read this file\n");

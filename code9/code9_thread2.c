@@ -30,7 +30,6 @@ int main(int argc, char *argv[]) {
     ssize_t read_bytes;
     ssize_t write_bytes = 0;
 
-    char *tmp_buffer;
     fd12 = open(pipe1, O_RDONLY);
     if (fd12 < 0) {
         printf("Can\'t open FIFO for reading\n");
@@ -39,6 +38,7 @@ int main(int argc, char *argv[]) {
 
     // Считывание из первого канала
     do {
+        char tmp_buffer[max_size];
         read_bytes = read(fd12, tmp_buffer, max_size);
         if (read_bytes == -1) {
             printf("Can\'t read from fd12\n");
