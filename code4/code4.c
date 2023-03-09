@@ -64,7 +64,7 @@ int main(int argc, char *argv[]) {
                 exit(-1);
             }
 
-            int output_file = output_file = open(argv[2], O_WRONLY | O_CREAT, 0666);
+            int output_file = open(argv[2], O_WRONLY | O_CREAT, 0666);
 
             if (output_file < 0) {
                 printf("Can\'t open file\n");
@@ -155,6 +155,8 @@ int main(int argc, char *argv[]) {
             exit(-1);
         }
     }
+
+    sleep(1);
 
     return 0;
 }
