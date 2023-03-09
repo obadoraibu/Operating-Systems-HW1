@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <fcntl.h>
+#include <sys/stat.h>
 #include "../func.c"
 
 const char *name1 = "pipe1.fifo";
@@ -17,7 +18,7 @@ int main(int argc, char *argv[]) {
 
     int fd1, fd2, result;
     int size;
-    char str_buf[mes_size] = {0};
+    char str_buf[mes_size];
 
     mknod(name1, S_IFIFO | 0666, 0);
     mknod(name2, S_IFIFO | 0666, 0);
@@ -67,7 +68,7 @@ int main(int argc, char *argv[]) {
             printf("Can\'t read string from FIFO\n");
             exit(-1);
         }
-        reverse_chars(str_buf); // выполняем преобразование строки
+        count_chars(str_buf); // выполняем преобразование строки
         if (close(fd1) < 0) {
             printf("child: Can\'t close FIFO\n");
             exit(-1);

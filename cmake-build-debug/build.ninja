@@ -49,11 +49,35 @@ cmake_ninja_workdir = /home/artem/projects/cpp/Operating-Systems-HW1/cmake-build
 
 build cmake_object_order_depends_target_Operating_Systems_HW1: phony || CMakeFiles/Operating_Systems_HW1.dir
 
-build CMakeFiles/Operating_Systems_HW1.dir/prog7/main.c.o: C_COMPILER__Operating_Systems_HW1_Debug /home/artem/projects/cpp/Operating-Systems-HW1/prog7/main.c || cmake_object_order_depends_target_Operating_Systems_HW1
-  DEP_FILE = CMakeFiles/Operating_Systems_HW1.dir/prog7/main.c.o.d
+build CMakeFiles/Operating_Systems_HW1.dir/cmd/main.c.o: C_COMPILER__Operating_Systems_HW1_Debug /home/artem/projects/cpp/Operating-Systems-HW1/cmd/main.c || cmake_object_order_depends_target_Operating_Systems_HW1
+  DEP_FILE = CMakeFiles/Operating_Systems_HW1.dir/cmd/main.c.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu11
   OBJECT_DIR = CMakeFiles/Operating_Systems_HW1.dir
-  OBJECT_FILE_DIR = CMakeFiles/Operating_Systems_HW1.dir/prog7
+  OBJECT_FILE_DIR = CMakeFiles/Operating_Systems_HW1.dir/cmd
+
+build CMakeFiles/Operating_Systems_HW1.dir/code4/code4.c.o: C_COMPILER__Operating_Systems_HW1_Debug /home/artem/projects/cpp/Operating-Systems-HW1/code4/code4.c || cmake_object_order_depends_target_Operating_Systems_HW1
+  DEP_FILE = CMakeFiles/Operating_Systems_HW1.dir/code4/code4.c.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles/Operating_Systems_HW1.dir
+  OBJECT_FILE_DIR = CMakeFiles/Operating_Systems_HW1.dir/code4
+
+build CMakeFiles/Operating_Systems_HW1.dir/code5/code5.c.o: C_COMPILER__Operating_Systems_HW1_Debug /home/artem/projects/cpp/Operating-Systems-HW1/code5/code5.c || cmake_object_order_depends_target_Operating_Systems_HW1
+  DEP_FILE = CMakeFiles/Operating_Systems_HW1.dir/code5/code5.c.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles/Operating_Systems_HW1.dir
+  OBJECT_FILE_DIR = CMakeFiles/Operating_Systems_HW1.dir/code5
+
+build CMakeFiles/Operating_Systems_HW1.dir/code6/code6.c.o: C_COMPILER__Operating_Systems_HW1_Debug /home/artem/projects/cpp/Operating-Systems-HW1/code6/code6.c || cmake_object_order_depends_target_Operating_Systems_HW1
+  DEP_FILE = CMakeFiles/Operating_Systems_HW1.dir/code6/code6.c.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles/Operating_Systems_HW1.dir
+  OBJECT_FILE_DIR = CMakeFiles/Operating_Systems_HW1.dir/code6
+
+build CMakeFiles/Operating_Systems_HW1.dir/code7/code7.c.o: C_COMPILER__Operating_Systems_HW1_Debug /home/artem/projects/cpp/Operating-Systems-HW1/code7/code7.c || cmake_object_order_depends_target_Operating_Systems_HW1
+  DEP_FILE = CMakeFiles/Operating_Systems_HW1.dir/code7/code7.c.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles/Operating_Systems_HW1.dir
+  OBJECT_FILE_DIR = CMakeFiles/Operating_Systems_HW1.dir/code7
 
 
 # =============================================================================
@@ -63,7 +87,7 @@ build CMakeFiles/Operating_Systems_HW1.dir/prog7/main.c.o: C_COMPILER__Operating
 #############################################
 # Link the executable Operating_Systems_HW1
 
-build Operating_Systems_HW1: C_EXECUTABLE_LINKER__Operating_Systems_HW1_Debug CMakeFiles/Operating_Systems_HW1.dir/prog7/main.c.o
+build Operating_Systems_HW1: C_EXECUTABLE_LINKER__Operating_Systems_HW1_Debug CMakeFiles/Operating_Systems_HW1.dir/cmd/main.c.o CMakeFiles/Operating_Systems_HW1.dir/code4/code4.c.o CMakeFiles/Operating_Systems_HW1.dir/code5/code5.c.o CMakeFiles/Operating_Systems_HW1.dir/code6/code6.c.o CMakeFiles/Operating_Systems_HW1.dir/code7/code7.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Operating_Systems_HW1.dir
   POST_BUILD = :

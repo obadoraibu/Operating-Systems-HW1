@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sys/types.h>
 #include <unistd.h>
 
 int main(int argc, char *argv[]) {
@@ -121,7 +120,8 @@ int main(int argc, char *argv[]) {
                 exit(-1);
             }
         }
-    } else {// process > 0
+    } else {
+        // process > 0
         // Первый процесс - считать из файла и направить в поток один (в процесс 2)
         if (close(fd12[0]) < 0) {
             printf("parent: Can\'t close reading side of pipe\n");

@@ -1,4 +1,3 @@
-#include <sys/types.h>
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -6,7 +5,6 @@
 #include <fcntl.h>
 #include <sys/wait.h>
 #include "../func.c"
-
 
 int main(int argc, char *argv[]) {
     char str_buf[mes_size];
