@@ -1,0 +1,8 @@
+# ninja log v5
+32	45	1678393219302827811	Operating_Systems_HW1	6b886edc4a3f54b4
+0	32	1678393219282827500	CMakeFiles/Operating_Systems_HW1.dir/main.c.o	ce52c6908e78b106
+0	13	1678393400997577993	build.ninja	50875e40e031b331
+0	31	1678393410985724526	CMakeFiles/Operating_Systems_HW1.dir/prog7/main.c.o	565f2e11929d4ec7
+31	44	1678393411005724820	Operating_Systems_HW1	da69549488401ef8
+0	29	1678393427877971389	CMakeFiles/Operating_Systems_HW1.dir/prog7/main.c.o	565f2e11929d4ec7
+29	41	1678393427897971680	Operating_Systems_HW1	da69549488401ef8
