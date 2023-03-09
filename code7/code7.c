@@ -99,7 +99,7 @@ int main(int argc, char *argv[]) {
         fd12 = open(pipe1, O_WRONLY);
 
         if (fd12 < 0) {
-            printf("Can\'t open FIFO for writting\n");
+            printf("Can\'t open FIFO for writing\n");
             exit(-1);
         }
 

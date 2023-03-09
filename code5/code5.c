@@ -103,7 +103,7 @@ int main(int argc, char *argv[]) {
             }
 
             if ((fd12 = open(name2, O_WRONLY)) < 0) {
-                printf("Can\'t open FIFO for writting\n");
+                printf("Can\'t open FIFO for writing\n");
                 exit(-1);
             }
 
