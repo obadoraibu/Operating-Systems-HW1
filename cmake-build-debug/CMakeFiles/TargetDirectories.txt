@@ -1,6 +1,0 @@
-/home/artem/projects/cpp/Operating-Systems-HW1/cmake-build-debug/CMakeFiles/code4.dir
-/home/artem/projects/cpp/Operating-Systems-HW1/cmake-build-debug/CMakeFiles/code5.dir
-/home/artem/projects/cpp/Operating-Systems-HW1/cmake-build-debug/CMakeFiles/code6.dir
-/home/artem/projects/cpp/Operating-Systems-HW1/cmake-build-debug/CMakeFiles/code7.dir
-/home/artem/projects/cpp/Operating-Systems-HW1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/artem/projects/cpp/Operating-Systems-HW1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
