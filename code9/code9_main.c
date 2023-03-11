@@ -1,17 +1,20 @@
-#include <sys/types.h>
-#include <unistd.h>
+#include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <fcntl.h>
 #include <sys/stat.h>
-#include "../func.c"
+#include <sys/types.h>
+#include <unistd.h>
+
+int mes_size = 200;
 
 const int max_size = 20;
 const char *pipe1 = "pipe1.fifo";
 const char *pipe2 = "pipe2.fifo";
 
 int main(int argc, char *argv[]) {
+    mes_size = 200;
+
     (void) umask(0);
     if (argc != 3) {
         printf("Please run the program with 2 arguments\n e.g.: \"./code read.txt write.txt\"\n");

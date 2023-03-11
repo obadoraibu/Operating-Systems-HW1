@@ -5,10 +5,32 @@
 #include <string.h>
 #include <fcntl.h>
 #include <sys/stat.h>
-#include "../func.c"
+
+int mes_size = 200;
+
+int counter[128] = {0};// инициализация массива нулями
+
+void count_chars(char *str) {
+    for (int i = 0; str[i] != '\0'; i++) {
+        counter[(int) str[i]]++;// инкремент частоты символа
+    }
+}
+
+void return_result(char *str) {
+    char output[mes_size];// создаем пустую строку для вывода
+    for (int i = 0; i < 128; i++) {
+        if (counter[i] > 0) {
+            char symbol[10];
+            sprintf(symbol, "%c:%d\n", i, counter[i]);// записываем символ и его частоту в строку
+            strcat(output, symbol);                   // добавляем символ и его частоту к строке вывода
+        }
+    }
+
+    strcpy(str, output);// копируем строку вывода обратно во входную строку
+}
 
 
-const int max_size = 200;
+const int max_size = 20;
 const char *pipe1 = "pipe1.fifo";
 const char *pipe2 = "pipe2.fifo";
 
@@ -45,7 +67,8 @@ int main(int argc, char *argv[]) {
             exit(-1);
         }
         tmp_buffer[read_bytes] = '\0';
-        strcat(buffer, tmp_buffer);
+        // Вызов функции по заданию
+        count_chars(tmp_buffer);
         write_bytes = write_bytes + read_bytes;
         tmp_buffer[write_bytes] = '\0';
     } while (read_bytes == max_size);
@@ -55,8 +78,8 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
 
-    // Вызов функции по заданию
-    count_chars(buffer);
+    // Обновляю buffer
+    return_result(buffer);
 
     fd23 = open(pipe2, O_WRONLY);
     if (fd23 < 0) {
