@@ -10,7 +10,7 @@ int mes_size = 200;
 
 int counter[128] = {0};// инициализация массива нулями
 
-void count_chars(char *str) {
+void count_chars(const char *str) {
     for (int i = 0; str[i] != '\0'; i++) {
         counter[(int) str[i]]++;// инкремент частоты символа
     }
@@ -26,6 +26,7 @@ void return_result(char *str) {
         }
     }
 
+    memset(str,0, mes_size);
     strcpy(str, output);// копируем строку вывода обратно во входную строку
 }
 

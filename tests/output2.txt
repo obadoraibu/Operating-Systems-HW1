@@ -1,10 +1,58 @@
-lliB setaG: gnixim shtam dna yenom ot dliub tfosorciM
-A. tA loohcs setaG dellecxe ni scitamehtam dna eht secneics. yB eht ega fo 13 eh saw ylpeed dessorgne ni erawtfos gnimmargorp. eH nageb orp- gnimmarg dna gub gnixif rof eht retupmoC retneC noitaroproC, dna ni 1970 setaG demrof a erutnev htiw a wollef loohcs tneduts dna tfosorciM oc- rednuof, luaP nellA, ot ekam ciffart sretnuoc gnisu eht letnI 8008 rossecorp.
-B. yB eht ylrae 1990s, swodniW dah nevird rehto soD-desab sIUG ekil meG dna soeG tuo fo eht tekram. tI demrofrep a ralimis taef htiw eht eciffO ytivitcudorp etius. setaG thguof drah ot hsilbatse
-tfosorciM’s tnanimod noitisop ni eht erawtfos yrtsudni. siH ytiliba ot teg iM- tfosorc erawtfos erp-dellatsni no tsom sCP deppihs ni eht dlrow edam tfosorciM eht dlrow’s tsegral erawtfos esuoh dna setaG eno fo eht dlrow’s tsehcir nem.
-С. ecniS 2000, setaG sah nevig yawa tuoba £15.5nb ot ytirahc. lanoitciF setaG sretcarahc evah deraeppa ni snootrac gnidulcni eht snospmiS, htuoS kraP dna ylimaF yuG.
-D. setaG saw nrob ni elttaeS, notgnihsaW ni 1955 ot a yhtlaew ylimaf: sih rehtaf saw a tnenimorp reywal dna sih rehtom devres no eht draob fo cerid- srot rof tsriF etatsretnI knaB dna ehT detinU yaW.
-E. setaG doots nwod sa feihc evitucexe fo tfosorciM ni 2000 ot sucof no erawtfos tnempoleved dna no 16 enuJ 2006, eh decnuonna taht eh dluow evom ot a trap-emit elor htiw tfosorciM ni 2008 ot sucof no sih ciporhtnalihp krow.
-F. nI 1973, setaG dellorne ta dravraH ytisrevinU, erehw eh tem erutuf ssenisub rentrap evetS remllaB. riehT tsrif erutnev saw ot poleved a noisrev fo eht cisaB gnimmargorp egaugnal rof
-eht riatlA 8800, eno fo eht tsrif orcim-
-sretupmoc.
+
+:7
+ :96
+':5
+(:2
+):2
+,:12
+-:3
+.:7
+0:3
+1:3
+2:1
+4:2
+6:4
+7:3
+8:1
+9:1
+A:1
+E:4
+F:1
+I:2
+K:1
+M:1
+N:4
+O:1
+P:1
+R:5
+S:1
+T:1
+Y:1
+[:2
+]:2
+a:48
+b:7
+c:20
+d:19
+e:52
+f:3
+g:11
+h:17
+i:46
+j:1
+k:3
+l:23
+m:9
+n:53
+o:48
+p:13
+q:2
+r:45
+s:54
+t:49
+u:26
+v:5
+w:6
+x:1
+y:11
+z:3

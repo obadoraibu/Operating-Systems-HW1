@@ -7,7 +7,9 @@ void count_chars(char *str) {
     int counter[128] = {0}; // инициализация массива нулями
 
     for (int i = 0; str[i] != '\0'; i++) {
-        counter[(int) str[i]]++; // инкремент частоты символа
+        if ((int) str[i] < 128) {
+            counter[(int) str[i]]++; // инкремент частоты символа
+        }
     }
 
     char output[mes_size]; // создаем пустую строку для вывода
@@ -19,5 +21,6 @@ void count_chars(char *str) {
         }
     }
 
+    memset(str,0, mes_size);
     strcpy(str, output); // копируем строку вывода обратно во входную строку
 }

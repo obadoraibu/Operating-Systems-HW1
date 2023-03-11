@@ -4,10 +4,10 @@
 #include <string.h>
 #include <fcntl.h>
 #include <sys/stat.h>
-#include "../func.c"
+#include "../lib.c"
 
-const char *name1 = "pipe1.fifo";
-const char *name2 = "pipe2.fifo";
+const char *pipe1 = "pipe1.fifo";
+const char *pipe2 = "pipe2.fifo";
 
 int main(int argc, char *argv[]) {
     if (argc != 3) {
@@ -21,8 +21,8 @@ int main(int argc, char *argv[]) {
     int size;
     char buffer[mes_size];
 
-    mknod(name1, S_IFIFO | 0666, 0);
-    mknod(name2, S_IFIFO | 0666, 0);
+    mknod(pipe1, S_IFIFO | 0666, 0);
+    mknod(pipe2, S_IFIFO | 0666, 0);
     fd12 = 0;
 
     // Cоздаем процессы (первый и второй)
@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
         } else if (result1 == 0) {
             // Третий процесс - считать второй канал (результат выполнения функции)
             // Напечатать результат выполнения в output-файл
-            fd12 = open(name2, O_RDONLY);
+            fd12 = open(pipe2, O_RDONLY);
             if (fd12 < 0) {
                 printf("Can\'t open FIFO for reading\n");
                 exit(-1);
@@ -77,11 +77,15 @@ int main(int argc, char *argv[]) {
             if (close(output_file) < 0) {
                 printf("Can\'t close file\n");
             }
+
+            unlink(pipe1); // удаляем pipe из файловой системы
+            unlink(pipe2); // удаляем pipe из файловой системы
+
         } else {
             // Второй процесс - считать первый канал (информацию из input-файла)
             // Вызвать функцию и получить результат
             // Направить результат во второй канал для передачи в третий процесс
-            if ((fd23 = open(name1, O_RDONLY)) < 0) {
+            if ((fd23 = open(pipe1, O_RDONLY)) < 0) {
                 printf("Can\'t open FIFO for reading\n");
                 exit(-1);
             }
@@ -102,7 +106,7 @@ int main(int argc, char *argv[]) {
                 exit(-1);
             }
 
-            if ((fd12 = open(name2, O_WRONLY)) < 0) {
+            if ((fd12 = open(pipe2, O_WRONLY)) < 0) {
                 printf("Can\'t open FIFO for writing\n");
                 exit(-1);
             }
@@ -137,7 +141,7 @@ int main(int argc, char *argv[]) {
             printf("Can\'t close file\n");
         }
 
-        if ((fd23 = open(name1, O_WRONLY)) < 0) {
+        if ((fd23 = open(pipe1, O_WRONLY)) < 0) {
             printf("Can\'t open FIFO for writting\n");
             exit(-1);
         }

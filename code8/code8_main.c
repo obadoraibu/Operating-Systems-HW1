@@ -4,7 +4,7 @@
 #include <string.h>
 #include <fcntl.h>
 #include <sys/stat.h>
-#include "../func.c"
+#include "../lib.c"
 
 const char *pipe1 = "pipe1.fifo";
 const char *pipe2 = "pipe2.fifo";
@@ -56,6 +56,7 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
 
+
     fd23 = open(pipe2, O_RDONLY);
     if (fd23 < 0) {
         printf("Can\'t open FIFO for reading\n");
@@ -77,7 +78,6 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
 
-
     int output_file = open(argv[2], O_WRONLY | O_CREAT, 0666);
 
     if (output_file < 0) {
@@ -96,5 +96,9 @@ int main(int argc, char *argv[]) {
     if (close(output_file) < 0) {
         printf("Can\'t close file\n");
     }
+
+    unlink(pipe1); // удаляем pipe из файловой системы
+    unlink(pipe2); // удаляем pipe из файловой системы
+
     return 0;
 }

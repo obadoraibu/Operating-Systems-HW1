@@ -1,2 +1,43 @@
-trohS rof suonorhcnysA refsnarT edoM, a krowten ygolonhcet si desab no gnirrefsnart atad ni sllec ro stekcap fo a dexif ezis. ehT llec desu htiw MTA si ylevitaler llams derapmoc ot stinu desu htiw redlo seigolonhcet. ehT llams, noc- tnats llec ezis swolla MTA tnempiuqe ot timsnart oediv, oidua, dna retupmoc atad revo eht emas krowten, dna erussa taht on elgnis epyt fo atad sgoh eht enil. emoS elpoep kniht taht MTA sdloh eht rewsna ot eht tenretnI htdiwdnab borp- mel, tub srehto era lacitpeks. MTA setaerc a dexif lennahc, ro etuor, neewteb owt stniop revenehw atad
-refsnart snigeb. sihT sreffid morf PCT/PI, ni hcihw sem- segas era dedivid otni stekcap dna hcae tekcap nac ekat a fid- tneref etuor morf ecruos ot noitanitsed. sihT ecnereffid sekam ti reisae ot kcart dna llib atad egasu ssorca na MTA krowten, tub ti sekam ti ssel elbatpada ot neddus segrus ni krowten ciffart.
+ :87
+':5
+,:4
+.:4
+0:1
+1:3
+2:4
+8:1
+9:1
+A:1
+B:1
+E:1
+I:1
+K:2
+L:2
+M:2
+N:2
+R:7
+S:2
+T:2
+[:5
+]:5
+a:43
+b:1
+c:9
+d:17
+e:51
+f:11
+g:5
+h:15
+i:27
+l:19
+m:14
+n:24
+o:31
+p:8
+r:30
+s:29
+t:33
+u:12
+v:8
+w:5
+y:7

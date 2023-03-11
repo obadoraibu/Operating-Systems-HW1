@@ -41,35 +41,128 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/artem/projects/cpp/Operating-Systems-HW1/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Operating_Systems_HW1
+# Object build statements for EXECUTABLE target code4
 
 
 #############################################
-# Order-only phony target for Operating_Systems_HW1
+# Order-only phony target for code4
 
-build cmake_object_order_depends_target_Operating_Systems_HW1: phony || CMakeFiles/Operating_Systems_HW1.dir
+build cmake_object_order_depends_target_code4: phony || CMakeFiles/code4.dir
 
-build CMakeFiles/Operating_Systems_HW1.dir/cmd/main.c.o: C_COMPILER__Operating_Systems_HW1_Debug /home/artem/projects/cpp/Operating-Systems-HW1/cmd/main.c || cmake_object_order_depends_target_Operating_Systems_HW1
-  DEP_FILE = CMakeFiles/Operating_Systems_HW1.dir/cmd/main.c.o.d
+build CMakeFiles/code4.dir/code4/code4.c.o: C_COMPILER__code4_Debug /home/artem/projects/cpp/Operating-Systems-HW1/code4/code4.c || cmake_object_order_depends_target_code4
+  DEP_FILE = CMakeFiles/code4.dir/code4/code4.c.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu11
-  OBJECT_DIR = CMakeFiles/Operating_Systems_HW1.dir
-  OBJECT_FILE_DIR = CMakeFiles/Operating_Systems_HW1.dir/cmd
+  OBJECT_DIR = CMakeFiles/code4.dir
+  OBJECT_FILE_DIR = CMakeFiles/code4.dir/code4
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Operating_Systems_HW1
+# Link build statements for EXECUTABLE target code4
 
 
 #############################################
-# Link the executable Operating_Systems_HW1
+# Link the executable code4
 
-build Operating_Systems_HW1: C_EXECUTABLE_LINKER__Operating_Systems_HW1_Debug CMakeFiles/Operating_Systems_HW1.dir/cmd/main.c.o
+build code4: C_EXECUTABLE_LINKER__code4_Debug CMakeFiles/code4.dir/code4/code4.c.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/Operating_Systems_HW1.dir
+  OBJECT_DIR = CMakeFiles/code4.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = Operating_Systems_HW1
-  TARGET_PDB = Operating_Systems_HW1.dbg
+  TARGET_FILE = code4
+  TARGET_PDB = code4.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target code5
+
+
+#############################################
+# Order-only phony target for code5
+
+build cmake_object_order_depends_target_code5: phony || CMakeFiles/code5.dir
+
+build CMakeFiles/code5.dir/code5/code5.c.o: C_COMPILER__code5_Debug /home/artem/projects/cpp/Operating-Systems-HW1/code5/code5.c || cmake_object_order_depends_target_code5
+  DEP_FILE = CMakeFiles/code5.dir/code5/code5.c.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles/code5.dir
+  OBJECT_FILE_DIR = CMakeFiles/code5.dir/code5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target code5
+
+
+#############################################
+# Link the executable code5
+
+build code5: C_EXECUTABLE_LINKER__code5_Debug CMakeFiles/code5.dir/code5/code5.c.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/code5.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = code5
+  TARGET_PDB = code5.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target code6
+
+
+#############################################
+# Order-only phony target for code6
+
+build cmake_object_order_depends_target_code6: phony || CMakeFiles/code6.dir
+
+build CMakeFiles/code6.dir/code6/code6.c.o: C_COMPILER__code6_Debug /home/artem/projects/cpp/Operating-Systems-HW1/code6/code6.c || cmake_object_order_depends_target_code6
+  DEP_FILE = CMakeFiles/code6.dir/code6/code6.c.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles/code6.dir
+  OBJECT_FILE_DIR = CMakeFiles/code6.dir/code6
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target code6
+
+
+#############################################
+# Link the executable code6
+
+build code6: C_EXECUTABLE_LINKER__code6_Debug CMakeFiles/code6.dir/code6/code6.c.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/code6.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = code6
+  TARGET_PDB = code6.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target code7
+
+
+#############################################
+# Order-only phony target for code7
+
+build cmake_object_order_depends_target_code7: phony || CMakeFiles/code7.dir
+
+build CMakeFiles/code7.dir/code7/code7.c.o: C_COMPILER__code7_Debug /home/artem/projects/cpp/Operating-Systems-HW1/code7/code7.c || cmake_object_order_depends_target_code7
+  DEP_FILE = CMakeFiles/code7.dir/code7/code7.c.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles/code7.dir
+  OBJECT_FILE_DIR = CMakeFiles/code7.dir/code7
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target code7
+
+
+#############################################
+# Link the executable code7
+
+build code7: C_EXECUTABLE_LINKER__code7_Debug CMakeFiles/code7.dir/code7/code7.c.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/code7.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = code7
+  TARGET_PDB = code7.dbg
 
 
 #############################################
@@ -105,7 +198,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/artem/projects/cpp/Operating-Systems-HW1/cmake-build-debug
 
-build all: phony Operating_Systems_HW1
+build all: phony code4 code5 code6 code7
 
 # =============================================================================
 # Built-in targets

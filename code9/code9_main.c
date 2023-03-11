@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/stat.h>
-#include <sys/types.h>
 #include <unistd.h>
 
 int mes_size = 200;
@@ -94,7 +93,6 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
 
-
     int output_file = open(argv[2], O_WRONLY | O_CREAT, 0666);
 
     if (output_file < 0) {
@@ -113,6 +111,9 @@ int main(int argc, char *argv[]) {
     if (close(output_file) < 0) {
         printf("Can\'t close file\n");
     }
+
+    unlink(pipe1); // удаляем pipe из файловой системы
+    unlink(pipe2); // удаляем pipe из файловой системы
 
     return 0;
 }

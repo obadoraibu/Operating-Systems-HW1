@@ -1,4 +1,4 @@
-#include "../func.c"
+#include "../lib.c"
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -156,6 +156,10 @@ int main(int argc, char *argv[]) {
     if (close(output_file) < 0) {
         printf("Can\'t close file\n");
     }
+
+
+    unlink(pipe1); // удаляем pipe из файловой системы
+    unlink(pipe2); // удаляем pipe из файловой системы
 
     return 0;
 }

@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
-#include "../func.c"
+#include "../lib.c"
 
 const char *pipe1 = "pipe1.fifo";
 const char *pipe2 = "pipe2.fifo";
