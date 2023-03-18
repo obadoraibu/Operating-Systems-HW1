@@ -20,7 +20,7 @@ __Условие. Вариант 19:__ </br>
 Для тестирования и запуска программ необходимо,
 находясь на самом высоком уровне, ввести в терминал:
 
-> ./code<_N_>/code<_N_>.o ./tests/input<_i_>.txt ./tests/output<_i_>.txt </br>
+> ./code<_N_>/code<_N_>.o ./tests/input<_i_>.txt ./code4/outputs/output<_i_>.txt </br>
 
 Где _N_ = [4, 9], а _i_ = [1, 5]
 
@@ -38,7 +38,7 @@ __Условие. Вариант 19:__ </br>
 > gcc code4/code4.c -o code4/code4.exe <br>
 
 Для запуска уже есть готовый исполняемый файл, его можно запустить так:
-> ./code4/code4.exe ./tests/input1.txt ./tests/output1.txt <br>
+> ./code4/code4.exe ./tests/input1.txt ./code4/outputs/output1.txt <br>
 
 ### 3. Схема решаемой задачи:
 
@@ -65,7 +65,7 @@ __Условие. Вариант 19:__ </br>
 > gcc code5/code5.c -o code5/code5.exe <br>
 
 Для запуска уже есть готовый исполняемый файл, его можно запустить так:
-> ./code5/code5.exe ./tests/input2.txt ./tests/output2.txt <br>
+> ./code5/code5.exe ./tests/input2.txt ./code4/outputs/output2.txt <br>
 
 ### 3. Схема решаемой задачи:
 
@@ -91,7 +91,7 @@ __Условие. Вариант 19:__ </br>
 > gcc code6/code6.c -o code6/code6.exe <br>
 
 Для запуска уже есть готовый исполняемый файл, его можно запустить так:
-> ./code6/code6.exe ./tests/input3.txt ./tests/output3.txt <br>
+> ./code6/code6.exe ./tests/input3.txt ./code4/outputs/output3.txt <br>
 
 ### 3. Схема решаемой задачи:
 
@@ -117,7 +117,7 @@ __Условие. Вариант 19:__ </br>
 > gcc code7/code7.c -o code7/code7.exe <br>
 
 Для запуска уже есть готовый исполняемый файл, его можно запустить так:
-> ./code7/code7.exe ./tests/input4.txt ./tests/output4.txt <br>
+> ./code7/code7.exe ./tests/input4.txt ./code4/outputs/output4.txt <br>
 
 ### 3. Схема решаемой задачи:
 
@@ -145,7 +145,7 @@ __Условие. Вариант 19:__ </br>
 > gcc code8/code8_help.c -o code8/code8_help.exe
 
 Для запуска уже есть готовые исполняемые файлы, их можно запустить в любом порядке:
-> ./code8/code8_main.exe ./tests/input5.txt ./tests/output5.txt <br>
+> ./code8/code8_main.exe ./tests/input5.txt ./code4/outputs/output5.txt <br>
 > ./code8/code8_help.exe
 
 ### 3. Схема решаемой задачи:
@@ -172,7 +172,7 @@ __Условие. Вариант 19:__ </br>
 > gcc code9/code9_help.c -o code9/code9_help.exe
 
 Для запуска уже есть готовые исполняемые файлы, их можно запустить в любом порядке:
-> ./code9/code9_main.exe ./tests/input6.txt ./tests/output6.txt <br>
+> ./code9/code9_main.exe ./tests/input6.txt ./code4/outputs/output6.txt <br>
 > ./code9/code9_help.exe
 
 ### 3. Схема решаемой задачи:
