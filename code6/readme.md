@@ -10,7 +10,7 @@
 > first settled in the northern region of Novgorod, and later founded a state centred on Kiev.[21]
 > Another Medieval Latin name for Rus' was Ruthenia.[22]
 
-[Содержимое output3.txt](https://github.com/ArtemFed/Operating-Systems-HW1/blob/main/tests/output3.txt)
+[Содержимое output3.txt](https://github.com/ArtemFed/Operating-Systems-HW1/blob/main/code6/outputs/output3.txt)
 > :87 </br>
 > ':5 </br>
 > ,:4 </br>

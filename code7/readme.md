@@ -28,7 +28,7 @@
 > 5.5% Unanswered  </br>
 > Demonym(s)    Russian  </br>
 
-[Содержимое output4.txt](https://github.com/ArtemFed/Operating-Systems-HW1/blob/main/tests/output4.txt)
+[Содержимое output4.txt](https://github.com/ArtemFed/Operating-Systems-HW1/blob/main/code7/outputs/output4.txt)
 > <_tab_>:5  </br>
 > <_enter_>:23  </br>
 > :32  </br>

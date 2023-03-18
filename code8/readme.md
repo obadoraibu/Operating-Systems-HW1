@@ -85,7 +85,7 @@
 > .ru </br>
 > .рф </br>
 
-[Содержимое output5.txt](https://github.com/ArtemFed/Operating-Systems-HW1/blob/main/tests/output5.txt)
+[Содержимое output5.txt](https://github.com/ArtemFed/Operating-Systems-HW1/blob/main/code8/outputs/output5.txt)
 > <_tab_>:12  </br>
 > <_enter_>:78  </br>
 > :147  </br>

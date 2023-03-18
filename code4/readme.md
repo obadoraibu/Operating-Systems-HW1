@@ -5,7 +5,7 @@
 [Содержимое input1.txt](https://github.com/ArtemFed/Operating-Systems-HW1/blob/main/tests/input1.txt)
 > Hello World!
 
-[Содержимое output1.txt](https://github.com/ArtemFed/Operating-Systems-HW1/blob/main/tests/output1.txt)
+[Содержимое output1.txt](https://github.com/ArtemFed/Operating-Systems-HW1/blob/main/code4/outputs/output1.txt)
 > :1 </br>
 > !:1 </br>
 > H:1 </br>

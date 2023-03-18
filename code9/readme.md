@@ -14,7 +14,7 @@
 > 9 </br>
 > 0 </br>
 
-[Содержимое output6.txt](https://github.com/ArtemFed/Operating-Systems-HW1/blob/main/tests/output6.txt)
+[Содержимое output6.txt](https://github.com/ArtemFed/Operating-Systems-HW1/blob/main/code9/outputs/output6.txt)
 > <_enter_>:9 </br>
 > 0:1 </br>
 > 1:20 </br>

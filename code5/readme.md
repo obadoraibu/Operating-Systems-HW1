@@ -14,7 +14,7 @@
 > Saint Petersburg is Russia's cultural centre and second-largest city.
 > Other major urban areas include Novosibirsk, Yekaterinburg, Nizhny Novgorod, and Kazan.
 
-[Содержимое output2.txt](https://github.com/ArtemFed/Operating-Systems-HW1/blob/main/tests/output2.txt)
+[Содержимое output2.txt](https://github.com/ArtemFed/Operating-Systems-HW1/blob/main/code5/outputs/output2.txt)
 > :1 </br>
 > :7 </br>
 > :96 </br>
